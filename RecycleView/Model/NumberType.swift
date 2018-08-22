@@ -16,11 +16,15 @@ enum NumberType: Int {
     func image() -> UIImage {
         switch self {
         case .one:
-            return R.image.one
+            return R.image.one()!
         case .two:
-            return R.image.two
+            return R.image.two()!
         case .three:
-            return R.image.three
+            return R.image.three()!
         }
+    }
+
+    static var numberOfPages: Int {
+        return three.rawValue + 1
     }
 }

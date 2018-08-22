@@ -25,6 +25,6 @@ class View: UIView {
     }
     
     private func configureView(numberType: NumberType) {
-        image.image = numberType.image
+        image.image = numberType.image()
     }
 }

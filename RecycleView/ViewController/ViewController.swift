@@ -12,12 +12,13 @@ import RxCocoa
 
 class ViewController: UIViewController {
     private var numberImageView: View!
-    private let disposeBag    = DisposeBag()
+    private let disposeBag = DisposeBag()
     
     @IBOutlet weak var scrollView: UIScrollView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        configureScrollView()
         configureNumber()
     }
     
@@ -34,7 +35,13 @@ class ViewController: UIViewController {
                 scrollView.addSubview(numberImageView)
         }
     }
-    
+
+    private func configureScrollView() {
+        scrollView.contentSize = CGSize(
+            width: View.size().width * CGFloat(NumberType.numberOfPages),
+            height: View.size().height
+        )
+    }
 }
 
 
