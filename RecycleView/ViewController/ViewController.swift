@@ -11,7 +11,7 @@ import RxSwift
 import RxCocoa
 
 class ViewController: UIViewController {
-    private var numberImageView: NumberImageView!
+    private var numberImageView: View!
     private let disposeBag    = DisposeBag()
     
     @IBOutlet weak var scrollView: UIScrollView!
@@ -27,9 +27,9 @@ class ViewController: UIViewController {
         numberType
             .enumerated()
             .forEach { index, number in
-                numberImageView = NumberImageView.create(numberType: number)
-                numberImageView.frame.size = NumberImageView.size()
-                numberImageView.frame.origin.x = NumberImageView.size().width * CGFloat(index)
+                numberImageView = View.create(numberType: number)
+                numberImageView.frame.size = View.size()
+                numberImageView.frame.origin.x = View.size().width * CGFloat(index)
                 
                 scrollView.addSubview(numberImageView)
         }

@@ -25,7 +25,7 @@
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <viewLayoutGuide key="safeArea" id="5G5-Sn-tkt"/>
             <connections>
-                <outlet property="image" destination="K24-d3-qh3" id="4jt-PN-71t"/>
+                <outlet property="image" destination="K24-d3-qh3" id="TYA-Yn-kuy"/>
             </connections>
             <point key="canvasLocation" x="-49.5" y="53.5"/>
         </view>

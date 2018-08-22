@@ -6,7 +6,7 @@
 //  Copyright © 2018年 ryouheiuno. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 enum NumberType: Int {
     case one
