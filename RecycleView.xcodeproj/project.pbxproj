@@ -18,13 +18,13 @@
 		A044BCEB212D0FF500DDA62D /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A044BCE9212D0FF500DDA62D /* RxSwift.framework */; };
 		A044BCEC212D0FF500DDA62D /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A044BCEA212D0FF500DDA62D /* RxCocoa.framework */; };
 		A044BCF3212D127000DDA62D /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = A044BCF2212D127000DDA62D /* R.generated.swift */; };
-		A0C4DCE421300ECC00023506 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C4DCE321300ECC00023506 /* HomeViewModel.swift */; };
-		A0C4DCE721300F2E00023506 /* InjectableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C4DCE621300F2E00023506 /* InjectableViewModel.swift */; };
 		A0C4DCEA21300F8300023506 /* UIStoryboard+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C4DCE921300F8300023506 /* UIStoryboard+Extension.swift */; };
 		A0C4DCF02130120D00023506 /* ViewControllerAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C4DCEF2130120D00023506 /* ViewControllerAssembly.swift */; };
 		A0C4DCF2213013B600023506 /* Swinject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0C4DCF1213013B600023506 /* Swinject.framework */; };
 		A0C4DCF42130142000023506 /* Container+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C4DCF32130142000023506 /* Container+Extension.swift */; };
 		A0C4DCF62130144300023506 /* UIViewController.Container+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C4DCF52130144300023506 /* UIViewController.Container+Extension.swift */; };
+		A0C4DCFD2130246900023506 /* PresentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C4DCFC2130246900023506 /* PresentViewController.swift */; };
+		A0C4DCFF2130247500023506 /* PresentViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0C4DCFE2130247500023506 /* PresentViewController.storyboard */; };
 		D398FD75F4EC1D152E6047D2 /* Pods_RecycleView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CD11BDD95F46633460C1173 /* Pods_RecycleView.framework */; };
 /* End PBXBuildFile section */
 
@@ -43,13 +43,13 @@
 		A044BCE9212D0FF500DDA62D /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
 		A044BCEA212D0FF500DDA62D /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
 		A044BCF2212D127000DDA62D /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
-		A0C4DCE321300ECC00023506 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
-		A0C4DCE621300F2E00023506 /* InjectableViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InjectableViewModel.swift; sourceTree = "<group>"; };
 		A0C4DCE921300F8300023506 /* UIStoryboard+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStoryboard+Extension.swift"; sourceTree = "<group>"; };
 		A0C4DCEF2130120D00023506 /* ViewControllerAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerAssembly.swift; sourceTree = "<group>"; };
 		A0C4DCF1213013B600023506 /* Swinject.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Swinject.framework; path = Carthage/Build/iOS/Swinject.framework; sourceTree = "<group>"; };
 		A0C4DCF32130142000023506 /* Container+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Container+Extension.swift"; sourceTree = "<group>"; };
 		A0C4DCF52130144300023506 /* UIViewController.Container+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController.Container+Extension.swift"; sourceTree = "<group>"; };
+		A0C4DCFC2130246900023506 /* PresentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentViewController.swift; sourceTree = "<group>"; };
+		A0C4DCFE2130247500023506 /* PresentViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PresentViewController.storyboard; sourceTree = "<group>"; };
 		A17DC9C39CAB457C777413B9 /* Pods-RecycleView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RecycleView.release.xcconfig"; path = "Pods/Target Support Files/Pods-RecycleView/Pods-RecycleView.release.xcconfig"; sourceTree = "<group>"; };
 		BC9FC3CB69DD9A2DC24A2820 /* Pods-RecycleView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RecycleView.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RecycleView/Pods-RecycleView.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -105,7 +105,6 @@
 				A0C4DCEB2130105C00023506 /* DI */,
 				A044BCE1212D0DD200DDA62D /* View */,
 				A044BCE6212D0F8C00DDA62D /* Model */,
-				A0C4DCE521300F0E00023506 /* Protocol */,
 				A0C4DCE821300F6A00023506 /* Extenison */,
 				A044BCF2212D127000DDA62D /* R.generated.swift */,
 				A044BCD5212D0D3500DDA62D /* Assets.xcassets */,
@@ -119,7 +118,7 @@
 			isa = PBXGroup;
 			children = (
 				A0C4DCEC2130118200023506 /* Home */,
-				A0C4DCEE213011C000023506 /* Present */,
+				A0C4DCFB2130243800023506 /* Present */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -130,14 +129,6 @@
 				A044BCE7212D0FAA00DDA62D /* NumberType.swift */,
 			);
 			path = Model;
-			sourceTree = "<group>";
-		};
-		A0C4DCE521300F0E00023506 /* Protocol */ = {
-			isa = PBXGroup;
-			children = (
-				A0C4DCE621300F2E00023506 /* InjectableViewModel.swift */,
-			);
-			path = Protocol;
 			sourceTree = "<group>";
 		};
 		A0C4DCE821300F6A00023506 /* Extenison */ = {
@@ -165,14 +156,15 @@
 				A044BCD2212D0D2F00DDA62D /* HomeViewController.storyboard */,
 				A044BCE2212D0DEC00DDA62D /* HomeView.swift */,
 				A044BCE4212D0E0300DDA62D /* HomeView.xib */,
-				A0C4DCE321300ECC00023506 /* HomeViewModel.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
 		};
-		A0C4DCEE213011C000023506 /* Present */ = {
+		A0C4DCFB2130243800023506 /* Present */ = {
 			isa = PBXGroup;
 			children = (
+				A0C4DCFC2130246900023506 /* PresentViewController.swift */,
+				A0C4DCFE2130247500023506 /* PresentViewController.storyboard */,
 			);
 			path = Present;
 			sourceTree = "<group>";
@@ -252,6 +244,7 @@
 				A044BCD9212D0D3500DDA62D /* LaunchScreen.storyboard in Resources */,
 				A044BCD6212D0D3500DDA62D /* Assets.xcassets in Resources */,
 				A044BCD4212D0D2F00DDA62D /* HomeViewController.storyboard in Resources */,
+				A0C4DCFF2130247500023506 /* PresentViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -332,13 +325,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A0C4DCE721300F2E00023506 /* InjectableViewModel.swift in Sources */,
 				A044BCD1212D0D2F00DDA62D /* HomeViewController.swift in Sources */,
 				A0C4DCF02130120D00023506 /* ViewControllerAssembly.swift in Sources */,
+				A0C4DCFD2130246900023506 /* PresentViewController.swift in Sources */,
 				A044BCCF212D0D2F00DDA62D /* AppDelegate.swift in Sources */,
 				A044BCF3212D127000DDA62D /* R.generated.swift in Sources */,
 				A044BCE8212D0FAA00DDA62D /* NumberType.swift in Sources */,
-				A0C4DCE421300ECC00023506 /* HomeViewModel.swift in Sources */,
 				A0C4DCF62130144300023506 /* UIViewController.Container+Extension.swift in Sources */,
 				A0C4DCEA21300F8300023506 /* UIStoryboard+Extension.swift in Sources */,
 				A044BCE3212D0DEC00DDA62D /* HomeView.swift in Sources */,

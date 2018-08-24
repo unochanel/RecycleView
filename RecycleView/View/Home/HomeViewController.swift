@@ -38,6 +38,13 @@ extension HomeViewController {
                 homeView.frame.size = HomeView.size()
                 homeView.frame.origin.x = HomeView.size().width * CGFloat(index)
 
+                homeView.presentButton.rx.tap.asDriver()
+                    .drive(onNext: { [weak self] in
+                        let viewController = PresentViewController.make(index: index)
+                        self?.present(viewController, animated: true)
+                    })
+                .disposed(by: disposeBag)
+
                 scrollView.addSubview(homeView)
         }
     }

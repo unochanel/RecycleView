@@ -17,5 +17,11 @@ final class ViewControllerAssembly: Assembly {
             let viewController = UIStoryboard.instantiateViewController(of: HomeViewController.self)
             return viewController
         }
+
+        container.register(PresentViewController.self) { (resolover, index: Int) in
+            let viewController = UIStoryboard.instantiateViewController(of: PresentViewController.self)
+            viewController.index = index
+            return viewController
+        }
     }
 }
