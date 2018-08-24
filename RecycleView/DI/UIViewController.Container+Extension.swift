@@ -14,3 +14,9 @@ extension HomeViewController {
         return Container.shared.resolve(HomeViewController.self)!
     }
 }
+
+extension PresentViewController {
+    static func make(index: Int) -> PresentViewController {
+        return Container.shared.resolve(PresentViewController.self, argument: index)!
+    }
+}

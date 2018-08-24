@@ -81,12 +81,14 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
   
-  /// This `R.storyboard` struct is generated, and contains static references to 2 storyboards.
+  /// This `R.storyboard` struct is generated, and contains static references to 3 storyboards.
   struct storyboard {
     /// Storyboard `HomeViewController`.
     static let homeViewController = _R.storyboard.homeViewController()
     /// Storyboard `LaunchScreen`.
     static let launchScreen = _R.storyboard.launchScreen()
+    /// Storyboard `PresentViewController`.
+    static let presentViewController = _R.storyboard.presentViewController()
     
     /// `UIStoryboard(name: "HomeViewController", bundle: ...)`
     static func homeViewController(_: Void = ()) -> UIKit.UIStoryboard {
@@ -96,6 +98,11 @@ struct R: Rswift.Validatable {
     /// `UIStoryboard(name: "LaunchScreen", bundle: ...)`
     static func launchScreen(_: Void = ()) -> UIKit.UIStoryboard {
       return UIKit.UIStoryboard(resource: R.storyboard.launchScreen)
+    }
+    
+    /// `UIStoryboard(name: "PresentViewController", bundle: ...)`
+    static func presentViewController(_: Void = ()) -> UIKit.UIStoryboard {
+      return UIKit.UIStoryboard(resource: R.storyboard.presentViewController)
     }
     
     fileprivate init() {}
@@ -150,6 +157,15 @@ struct _R {
       
       let bundle = R.hostingBundle
       let name = "LaunchScreen"
+      
+      fileprivate init() {}
+    }
+    
+    struct presentViewController: Rswift.StoryboardResourceWithInitialControllerType {
+      typealias InitialController = PresentViewController
+      
+      let bundle = R.hostingBundle
+      let name = "PresentViewController"
       
       fileprivate init() {}
     }
