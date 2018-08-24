@@ -12,17 +12,17 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view contentMode="scaleToFill" id="0m9-mh-13v" customClass="View" customModule="RecycleView" customModuleProvider="target">
+        <view contentMode="scaleToFill" id="0m9-mh-13v" customClass="HomeView" customModule="RecycleView" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="375" height="395"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iJZ-u4-0DA">
-                    <rect key="frame" x="67" y="77" width="240" height="240"/>
+                    <rect key="frame" x="95" y="99" width="195" height="188"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <state key="normal" title="Button"/>
                 </button>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="K24-d3-qh3">
-                    <rect key="frame" x="67" y="77" width="240" height="240"/>
+                    <rect key="frame" x="95" y="99" width="195" height="188"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 </imageView>
             </subviews>
