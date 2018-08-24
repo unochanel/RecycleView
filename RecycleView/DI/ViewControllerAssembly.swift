@@ -11,8 +11,10 @@ import Swinject
 
 final class ViewControllerAssembly: Assembly {
     func assemble(container: Container) {
+
+        //MARK: - HomeViewController
         container.register(HomeViewController.self) { resolover in
-            let viewController = HomeViewController()
+            let viewController = UIStoryboard.instantiateViewController(of: HomeViewController.self)
             return viewController
         }
     }

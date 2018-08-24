@@ -11,11 +11,11 @@ import RxSwift
 import RxCocoa
 
 class HomeViewController: UIViewController {
-    private var numberImageView: HomeView!
+    private var homeView: HomeView!
     private let disposeBag = DisposeBag()
-    
+
     @IBOutlet weak var scrollView: UIScrollView!
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         configure()
@@ -34,11 +34,11 @@ extension HomeViewController {
         numberType
             .enumerated()
             .forEach { index, number in
-                numberImageView = HomeView.create(numberType: number)
-                numberImageView.frame.size = HomeView.size()
-                numberImageView.frame.origin.x = HomeView.size().width * CGFloat(index)
+                homeView = HomeView.create(numberType: number)
+                homeView.frame.size = HomeView.size()
+                homeView.frame.origin.x = HomeView.size().width * CGFloat(index)
 
-                scrollView.addSubview(numberImageView)
+                scrollView.addSubview(homeView)
         }
     }
 
