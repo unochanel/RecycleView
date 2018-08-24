@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  HomeViewController.swift
 //  RecycleView
 //
 //  Created by 宇野凌平 on 2018/08/22.
@@ -10,8 +10,8 @@ import UIKit
 import RxSwift
 import RxCocoa
 
-class ViewController: UIViewController {
-    private var numberImageView: View!
+class HomeViewController: UIViewController {
+    private var numberImageView: HomeView!
     private let disposeBag = DisposeBag()
     
     @IBOutlet weak var scrollView: UIScrollView!
@@ -28,9 +28,9 @@ class ViewController: UIViewController {
         numberType
             .enumerated()
             .forEach { index, number in
-                numberImageView = View.create(numberType: number)
-                numberImageView.frame.size = View.size()
-                numberImageView.frame.origin.x = View.size().width * CGFloat(index)
+                numberImageView = HomeView.create(numberType: number)
+                numberImageView.frame.size = HomeView.size()
+                numberImageView.frame.origin.x = HomeView.size().width * CGFloat(index)
                 
                 scrollView.addSubview(numberImageView)
         }
@@ -38,8 +38,8 @@ class ViewController: UIViewController {
 
     private func configureScrollView() {
         scrollView.contentSize = CGSize(
-            width: View.size().width * CGFloat(NumberType.numberOfPages),
-            height: View.size().height
+            width: HomeView.size().width * CGFloat(NumberType.numberOfPages),
+            height: HomeView.size().height
         )
     }
 }

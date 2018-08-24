@@ -1,5 +1,5 @@
 //
-//  View.swift
+//  HomeView.swift
 //  RecycleView
 //
 //  Created by 宇野凌平 on 2018/08/22.
@@ -10,7 +10,7 @@ import UIKit
 import RxSwift
 import RxCocoa
 
-class View: UIView {
+class HomeView: UIView {
     @IBOutlet weak var image: UIImageView!
     @IBOutlet weak var presentButton: UIButton!
 
@@ -18,8 +18,8 @@ class View: UIView {
         return CGSize(width: UIScreen.main.bounds.width, height: 395)
     }
     
-    static func create(numberType: NumberType) -> View{
-        let view = R.nib.view.firstView(owner: nil)!
+    static func create(numberType: NumberType) -> HomeView{
+        let view = R.nib.homeView.firstView(owner: nil)!
         view.frame.size = size()
         view.configureView(numberType: numberType)
         return view
