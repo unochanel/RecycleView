@@ -6,4 +6,12 @@
 //  Copyright © 2018年 ryouheiuno. All rights reserved.
 //
 
-import Foundation
+import Swinject
+
+extension Container {
+    static let shared = assembler.resolver
+    
+    private static let assembler = Assembler([
+        ViewControllerAssembly()
+        ])
+}

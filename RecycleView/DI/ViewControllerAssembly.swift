@@ -10,5 +10,10 @@ import UIKit
 import Swinject
 
 final class ViewControllerAssembly: Assembly {
-    func containe
+    func assemble(container: Container) {
+        container.register(HomeViewController.self) { resolover in
+            let viewController = HomeViewController()
+            return viewController
+        }
+    }
 }

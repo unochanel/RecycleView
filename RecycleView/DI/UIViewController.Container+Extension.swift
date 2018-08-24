@@ -6,4 +6,11 @@
 //  Copyright © 2018年 ryouheiuno. All rights reserved.
 //
 
-import Foundation
+import Swinject
+import UIKit
+
+extension HomeViewController {
+    static func make() -> HomeViewController {
+        return Container.shared.resolve(HomeViewController.self)!
+    }
+}

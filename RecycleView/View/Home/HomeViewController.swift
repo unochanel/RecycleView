@@ -18,20 +18,26 @@ class HomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        configure()
+    }
+}
+
+extension HomeViewController {
+    private func configure() {
         configureScrollView()
         configureNumber()
     }
-    
+
     private func configureNumber() {
         let numberType: [NumberType] = [.one, .two, .three]
-        
+
         numberType
             .enumerated()
             .forEach { index, number in
                 numberImageView = HomeView.create(numberType: number)
                 numberImageView.frame.size = HomeView.size()
                 numberImageView.frame.origin.x = HomeView.size().width * CGFloat(index)
-                
+
                 scrollView.addSubview(numberImageView)
         }
     }
