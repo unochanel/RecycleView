@@ -12,7 +12,8 @@ import RxCocoa
 
 class View: UIView {
     @IBOutlet weak var image: UIImageView!
-    
+    @IBOutlet weak var presentButton: UIButton!
+
     static func size() -> CGSize {
         return CGSize(width: UIScreen.main.bounds.width, height: 395)
     }
